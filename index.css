@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+        
+#text{
+    font-size: 5vh;
+}
+
+.snoop{
+    background-image: url(source.gif);
+    background-size: contain;
+    height: 100vh;
+}
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+.row{
+    padding: 0;
+    margin: 0;
+}
+
+.col{
+    padding: 0;
+    margin: 0;
+}
