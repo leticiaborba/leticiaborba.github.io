@@ -112,6 +112,10 @@ a:hover{
     margin: 0 2vw;
 }
 
+.social-icon:hover{
+    color: darkgrey;
+}
+
 .contato-item{
     font-size: 3vh;
 }
