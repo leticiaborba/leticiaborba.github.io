@@ -1,13 +1,41 @@
-var cores = ["red", "purple", "blue", "yellow", "pink", "green", "brown", "black"];
+var imageCounter = 1;
 
-function randomNumber(min,max){
+var imageList = [
+    "trabalhos/foto6.jpg",
+    "trabalhos/foto2.jpg",
+    "trabalhos/foto8.jpg",
+    "trabalhos/foto7.jpg"
+];
 
-    return Math.floor(Math.random()*(max-min+1)+min);
-
+function preloadImages() {
+    $(imageList).each(function () {
+        $('<img />').attr('src', this).appendTo('body').hide();
+    });
 }
 
-function textColor(){
-    $("#text").css("color", cores[randomNumber(0, cores.length-1)])
-}
+preloadImages();
 
-setInterval(textColor, 300);
+$(window).on("load", function () {
+    
+    $("#loading-spinner").animate({
+        opacity: 0
+    }, function(){
+        $("#loading-spinner").css("display", "none");
+    });
+    
+    setInterval(function () {
+        if (imageCounter === imageList.length - 1) {
+            imageCounter = 0;
+            $("#main-pic").animate({opacity: 0}, 400, function () {
+                $("#main-pic").css("background-image", "url(" + imageList[imageCounter] + ")");
+            });
+            $("#main-pic").animate({opacity: 1}, 600);
+        } else {
+            imageCounter++;
+            $("#main-pic").animate({opacity: 0}, 400, function () {
+                $("#main-pic").css("background-image", "url(" + imageList[imageCounter] + ")");
+            });
+            $("#main-pic").animate({opacity: 1}, 600);
+        }
+    }, 3000);
+});

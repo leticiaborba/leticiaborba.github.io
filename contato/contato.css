@@ -17,7 +17,7 @@ a:hover{
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url(trabalhos/foto2.jpg);
+    background-image: url(foto2.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -46,7 +46,7 @@ a:hover{
     margin-left: 2vw;
     font-size: 4.5vh;
     font-family: 'BenchNine', sans-serif;
-}
+}   
 
 #menu-hamburger{
     margin-top: 3vh;
@@ -91,5 +91,33 @@ a:hover{
 
     to{
         opacity: 1;
+    }
+}
+
+.contato{
+    width: 90%;
+    height: 65%;
+    left: 5%;
+    top: 20%;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 1;
+    position: fixed;
+    text-align: center;
+    padding: 10vh 10vw 0 10vw;
+}
+
+.social-icon{
+    color: white;
+    margin: 0 2vw;
+}
+
+.contato-item{
+    font-size: 3vh;
+}
+
+@media (max-width: 576px){
+    .menu-item{
+        font-size: 2.6vh;
     }
 }
