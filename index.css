@@ -93,3 +93,13 @@ a:hover{
         opacity: 1;
     }
 }
+
+@media (min-width: 576px){
+    #menu-brand{
+        font-size: 4vw;
+    }
+    
+    .menu-item{
+        font-size: 3.2vw;
+    }
+}
