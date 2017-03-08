@@ -1,4 +1,4 @@
-var imageCounter = 1;
+var imageCounter = 2;
 
 var imageList = [
     "trabalhos/foto6.jpg",
