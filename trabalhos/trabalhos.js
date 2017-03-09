@@ -16,7 +16,7 @@ $(".image-container").hover(function () {
     $(this).css("filter", "grayscale(100%)");
 });
 
-/*$(".menu-arrow").on("click", function () {
+$(".menu-arrow").on("click", function () {
 
     'use strict';
     if ($(".menu-slide").css("display") === "none") {
@@ -43,7 +43,7 @@ $(".image-container").hover(function () {
             $(".menu-arrow").addClass("fa-angle-left");
         });
     }
-});*/
+});
 
 $(".image-container").on("click", function () {
     'use strict';
