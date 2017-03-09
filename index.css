@@ -94,12 +94,12 @@ a:hover{
     }
 }
 
-@media (min-width: 576px){
+@media (max-width: 576px){
     #menu-brand{
-        font-size: 4vw;
+        font-size: 4vh;
     }
     
     .menu-item{
-        font-size: 3.2vw;
+        font-size: 3.2vh;
     }
 }
