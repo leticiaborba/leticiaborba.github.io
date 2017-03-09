@@ -8,7 +8,7 @@ $(window).on("load", function () {
 });
 
 $(".image-container").hover(function(){
-    $(this).css("filter", "none");
+    $(this).css("-webkit-filter", "none");
 }, function(){
     $(this).css("-webkit-filter", "grayscale(100%)");
 });
