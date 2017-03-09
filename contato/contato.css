@@ -66,9 +66,10 @@ a:hover{
     margin-top: 40vh;
     font-size: 300%;
     animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
 }
 
-@keyframes spin{
+@-webkit-keyframes spin{
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }

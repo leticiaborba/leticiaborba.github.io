@@ -41,9 +41,10 @@ a{
     margin-top: 40vh;
     font-size: 300%;
     animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
 }
 
-@keyframes spin{
+@-webkit-keyframes spin{
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
@@ -61,7 +62,7 @@ a{
 .image-container{
     background-position:center;
     background-size:cover;
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
     height: 40vh;
     border: none;
 }

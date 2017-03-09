@@ -10,7 +10,7 @@ $(window).on("load", function () {
 $(".image-container").hover(function(){
     $(this).css("filter", "none");
 }, function(){
-    $(this).css("filter", "grayscale(100%)");
+    $(this).css("-webkit-filter", "grayscale(100%)");
 });
 
 $(".menu-arrow").on("click", function(){
