@@ -52,10 +52,10 @@ a{
 .menu-slide{
     position: fixed;
     right: 0;
-    width: 20%;
+    width: 100%;
     height: 100vh;
     padding-top: 25vh;
-    background-color: #000;
+    background-color: #d5f;
     text-align: right;
     display: block;
 }
