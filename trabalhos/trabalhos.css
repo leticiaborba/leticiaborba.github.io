@@ -52,11 +52,12 @@ a{
 .menu-slide{
     position: fixed;
     right: 0;
+    width: 20%;
     height: 100vh;
     padding-top: 25vh;
     background-color: #000;
     text-align: right;
-    display: none;
+    display: block;
 }
 
 .image-container{
