@@ -1,59 +1,65 @@
+/*global $*/
 $(window).on("load", function () {
-    
+    'use strict';
     $("#loading-spinner").animate({
         opacity: 0
-    }, function(){
+    }, function () {
         $("#loading-spinner").css("display", "none");
     });
 });
 
-$(".image-container").hover(function(){
+$(".image-container").hover(function () {
+    'use strict';
     $(this).css("filter", "none");
-}, function(){
+}, function () {
+    'use strict';
     $(this).css("filter", "grayscale(100%)");
 });
 
-$(".menu-arrow").on("click", function(){
+/*$(".menu-arrow").on("click", function () {
 
-    if($(".menu-slide").css("display") == "none"){
+    'use strict';
+    if ($(".menu-slide").css("display") === "none") {
         $(".menu-slide").css("display", "block");
         $(".menu-slide").animate({
             right: 0
         });
         $(".menu-arrow").animate({
             right: $(".menu-slide").css("width")
-        },function(){
+        }, function () {
             $(".menu-arrow").removeClass("fa-angle-left");
             $(".menu-arrow").addClass("fa-angle-right");
         });
-     } else{
+    } else {
         $(".menu-slide").animate({
             right: '-40vw'
-        }, function(){
+        }, function () {
             $(".menu-slide").css("display", "none");
         });
-         $(".menu-arrow").animate({
+        $(".menu-arrow").animate({
             right: 0
-        }, function(){
+        }, function () {
             $(".menu-arrow").removeClass("fa-angle-right");
             $(".menu-arrow").addClass("fa-angle-left");
-         });
-     }
-});
+        });
+    }
+});*/
 
-$(".image-container").on("click", function(){
+$(".image-container").on("click", function () {
+    'use strict';
     $(".foto-zoom, .foto-zoom-large").css("display", "none");
-    if($(window).width() > 576){
-        if($(this).hasClass("large")){
+    if ($(window).width() > 576) {
+        if ($(this).hasClass("large")) {
             $(".foto-zoom-large").css("background-image", $(this).css("background-image"));
             $(".foto-zoom-large").css("display", "block");
-        } else{
+        } else {
             $(".foto-zoom").css("background-image", $(this).css("background-image"));
             $(".foto-zoom").css("display", "block");
         }
-    }            
+    }
 });
 
-$(".foto-zoom, .foto-zoom-large, .menu-arrow").on("click", function(){
+$(".foto-zoom, .foto-zoom-large, .menu-arrow").on("click", function () {
+    'use strict';
     $(".foto-zoom, .foto-zoom-large").css("display", "none");
 });
