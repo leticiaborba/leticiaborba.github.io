@@ -51,7 +51,7 @@ a{
 
 .menu-slide{
     position: fixed;
-    right: -40vw;
+    right: 0;
     height: 100vh;
     padding-top: 25vh;
     background-color: #000;
