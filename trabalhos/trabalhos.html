@@ -32,41 +32,42 @@
 </head>
 <body>
     
-    <div id="loading-spinner"><i class="fa fa-circle-o-notch spinner"></i></div>
+    <div id="loading-div"><i class="fa fa-circle-o-notch spinner"></i></div>
     
     <div class="container-fluid row">        
         <div class="col-sm-4 image-div">
-            <div class="image-container large" style="background-image:url(foto5.jpg)"></div>
-            <div class="image-container" style="background-image:url(foto8.jpg)"></div>
-            <div class="image-container" style="background-image:url(foto1.jpg)"></div>
+            <div class="image-container large" style="background-image:url(foto5.jpg)" onmouseover="filterOff(this)" onmouseout="filterOn(this)"></div>
+            <div class="image-container" style="background-image:url(foto8.jpg)" onmouseover="filterOff(this)" onmouseout="filterOn(this)"></div>
+            <div class="image-container" style="background-image:url(foto1.jpg)" onmouseover="filterOff(this)" onmouseout="filterOn(this)"></div>
         </div>
         <div class="col-sm-4 image-div">
-            <div class="image-container" style="background-image:url(foto6.jpg)"></div>
-            <div class="image-container" style="background-image:url(foto3.jpg)"></div>
-            <div class="image-container large" style="background-image:url(foto9.jpg)"></div>
+            <div class="image-container" style="background-image:url(foto6.jpg)" onmouseover="filterOff(this)" onmouseout="filterOn(this)"></div>
+            <div class="image-container" style="background-image:url(foto3.jpg)" onmouseover="filterOff(this)" onmouseout="filterOn(this)"></div>
+            <div class="image-container large" style="background-image:url(foto9.jpg)" onmouseover="filterOff(this)" onmouseout="filterOn(this)"></div>
         </div>
         <div class="col-sm-4 image-div">
-            <div class="image-container" style="background-image:url(foto7.jpg)"></div>
-            <div class="image-container" style="background-image:url(foto2.jpg)"></div>
-            <div class="image-container" style="background-image:url(foto10.jpg)"></div>
-            <div class="image-container" style="background-image:url(foto4.jpg)"></div>
+            <div class="image-container" style="background-image:url(foto7.jpg)" onmouseover="filterOff(this)" onmouseout="filterOn(this)"></div>
+            <div class="image-container" style="background-image:url(foto2.jpg)" onmouseover="filterOff(this)" onmouseout="filterOn(this)"></div>
+            <div class="image-container" style="background-image:url(foto10.jpg)" onmouseover="filterOff(this)" onmouseout="filterOn(this)"></div>
+            <div class="image-container" style="background-image:url(foto4.jpg)" onmouseover="filterOff(this)" onmouseout="filterOn(this)"></div>
         </div>
         
-        <i class="fa fa-angle-left menu-arrow"></i>
-        
-        <div class="menu-slide">
-            <a href="../index.html"><p class="menu-item">Início</p></a>
-            <a href=""><p class="menu-item" style="color:white">Trabalhos</p></a>
-            <a href="../contato/contato.html"><p class="menu-item">Contato</p></a>
+        <div id="menu" class="row">
+            <div id="menu-content">
+                <a href="../index.html"><span>Inicio</span></a>
+                <a href="trabalhos.html"><span>Trabalhos</span></a>
+                <a href="../contato/contato.html"><span>Contato</span></a>
+            </div>
+            <div id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
         
-        <div class="foto-zoom"></div>
-        <div class="foto-zoom-large"></div>
+        <div id="foto-zoom"></div>
+        <div id="foto-zoom-large"></div>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     
     <script src="trabalhos.js"></script>
     
