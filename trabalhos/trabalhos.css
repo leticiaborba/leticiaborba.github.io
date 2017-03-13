@@ -46,7 +46,9 @@ a{
     visibility: hidden;
 }
 
-#loading-div i{    
+#loading-div i{
+    font-size: 300%;
+    
     -webkit-animation: spin 1s linear infinite;
     
     color: white;
