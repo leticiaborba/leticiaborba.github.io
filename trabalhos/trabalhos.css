@@ -216,6 +216,8 @@ a{
     
     #menu-content a{
         margin-right: 10px;
+        
+        font-size: 18px;
     }
 }
 
