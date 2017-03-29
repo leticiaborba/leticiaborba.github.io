@@ -213,6 +213,10 @@ a{
 
         width: 60%;
     }
+    
+    #menu-content a{
+        margin-right: 10px;
+    }
 }
 
 .row{
